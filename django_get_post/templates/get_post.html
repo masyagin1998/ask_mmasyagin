@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>DZ - 2. N 4</title>
+    </head>
+    <body>
+        <h3>Hello, World!</h3>
+        <div>
+            <h5>Post</h5>
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" name="post">
+    	        <input type="submit" value="Send">
+            </form>
+        </div>
+        <div>
+            {% if data %}
+            <h5>{{ method }} Parameters:</h5>
+            <ul>
+                {% for key,value in data.items %}
+                <li>{{ key }} = {{ value }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </body>
+</html>
