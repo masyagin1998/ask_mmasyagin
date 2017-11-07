@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" type="image/png" href="img/icon/guitar1.png"/>
+        
+        <!-- Title -->
+        <title>Metal Forum</title>
+        
+        <!-- Bootstrap core CSS -->
+        {% load static %}
+        <link href="{% static 'css/bootstrap/bootstrap.css' %}" rel="stylesheet">
+        
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/my/base.css' %}" rel="stylesheet">
+        <link href="{% static 'css/my/index.css' %}" rel="stylesheet">
+        <link href="{% static 'css/my/question.css' %}" rel="stylesheet">
+        <link href="{% static 'css/my/settings.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navigation-bar">
+            
+            <!-- Brand Name -->
+            <a class="navbar-brand" href="index.html"><img class="my-brand-name" src="img/logo/logo.png"></a>
+            
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Search Bar -->
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text"
+                           size="62" placeholder="Search" aria-label="Search">
+                    <input type="button" value="\m/"
+                           class="btn btn-outline-success my-2 my-sm-0 search-button"
+                           onclick='location.href="ask.html"'>
+                </form>
+            </div>
+            {% if is_logged_in %}
+            <!-- For user -->
+            <img class="avatar" src="img/ava/ozzy_osbourne.png">
+            <div class="user">
+
+                <!-- User Name -->
+                Ozzy Osbourne
+                <br>
+                
+                <!-- Links to Settings and Logout -->
+                <a class="user-action" href="{% url 'settings' %}">Settings</a><a class="user-action" href="{% url 'logout' %}">Logout</a>
+            </div>
+            {% else %}
+            <!-- For user -->
+            <div class="logged-out">
+                
+                <!-- Links to Log In and Sign Up -->
+                <a class="user-action" href="{% url 'login' %}">LogIn</a><a class="user-action" href="{% url 'signup' %}">SignUp</a>
+            </div> 
+            {% endif %}
+        </nav>
+        
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 ">
+                    {% block content %}
+            		{% endblock %}
+                </div>
+                
+                <!-- Tags Column -->
+                <div class="col-md-3 col-sm-6 tags-column"><br>
+                    
+                    <!-- Top Tags -->
+                    <div class="type-of-tags row"><h3>Top tags:</h3></div>
+                    <div class="top-tags">
+                        <b class="red-label">#Metal</b><b class="orange-label">#Rock</b>
+                        <b class="yellow-label">#ManowaR</b><b class="green-label">#MotorHead</b><b class="purple-label">#Doro</b>
+                        <b class="green-label">#Whitesnake</b><b class="orange-label">#Accept</b>
+                        <b class="red-label">#DIO</b><b class="purple-label">#Aerosmith</b><b class="yellow-label">#Death</b>
+                        <b class="orange-label">#In_Flames</b><b class="red-label">\m/</b>
+                        <b class="green-label">#Russkaja</b><b class="yellow-label">#Molotov</b><b class="purple-label">#Eisbrecher</b>
+                        <b class="purple-label">#Paddyhats</b><b class="orange-label">#Rumjacks</b>
+                        <b class="red-label">#In_Extremo</b>
+                    </div>
+                    
+                    <!-- Top 10 Members -->
+                    <div class="type-of-tags row"><h3>Top 10 Members:</h3></div>
+                    <div class="top-members">
+                        <a href="#" class="red-label">Lemmy Killmister</a>
+                        <br>
+                        <a href="#" class="yellow-label">Marilyn Manson</a>
+                        <br>
+                        <a href="#" class="green-label">Andreas Bergh</a>
+                        <br>
+                        <a href="#" class="purple-label">Freddy Mercury</a>
+                        <br>
+                        <a href="#" class="orange-label">Sergey Troitskiy</a>
+                        <br>
+                        <a href="#" class="yellow-label">Liv Jagrell</a>
+                        <br>
+                        <a href="#" class="orange-label">Yui Itsuki</a>
+                        <br>
+                        <a href="#" class="purple-label">Rob Halford</a>
+                        <br>
+                        <a href="#" class="red-label">Valery Kipelov</a>
+                        <br>
+                        <a href="#" class="green-label">Erick Backman</a>
+                        <br>
+                    </div> 
+                </div>
+                <br>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <br>
+        <footer class="footer">
+            <br>
+            <div class="designed-by">
+                Designed by Mikhail Masyagin
+            </div>
+            <!-- Tech Support -->
+            <div class="tech-support">
+                Tech Support:
+                <a href="mailto:masyagin1998@yandex.ru">
+                    <img src="img/tech_support/email.png">
+                </a>
+                <a href="https://vk.com/kashvaknettel" target="_blank">
+                    <img src="img/tech_support/vk.png">
+                </a>
+                <a href="https://github.com/masyagin1998" target="_blank">
+                    <img src="img/tech_support/github.png">
+                </a>
+            </div>
+        </footer>
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    </body>
+</html>
