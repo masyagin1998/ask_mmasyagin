@@ -1,43 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <!-- New Question -->
-<div class="row my-input-title"><h3>New question \m/</h3></div>
-<form class="my-input-block">
-
-    <!-- Title -->
-    <div class="form-group row">
-        <label for="inputTitle" class="col-sm-1 label">Title:</label>
-        <div class="col-sm-11">
-            <input type="text" class="form-control my-input-textarea" id="inputTitle" placeholder="How to become a headbanger?">
-        </div>
-    </div>
-
-    <!-- Text -->
-    <div class="form-group row">
-        <label for="inputTitle" class="col-sm-1 label label-text">Text:</label>
-        <div class="col-sm-11">
-            <textarea class="form-control my-input-textarea" rows="32" id="inputTitle" placeholder="How to become a headbanger?"></textarea>
-        </div>
-    </div>
-
-    <!-- Tags -->
-    <div class="form-group row">
-        <label for="inputTags" class="col-sm-1 label label-tags">Tags:</label>
-        <div class="col-sm-11">
-            <input type="text" class="form-control my-input-textarea is-invalid" your-quest" id="inputTags" placeholder="#Heavy, #Metal">
-            <div class="invalid-feedback">
-                Please provide valid tags.
-            </div>
-        </div>
-    </div>
-
-    <!-- Submit Button -->
-    <div class="form-group row">
-        <div class="col-sm-11">
-            <button type="submit" class="btn btn-primary send-button">\m/</button>
-        </div>
-    </div>
-</form>
+{% include "modules/ask/ask_form.html" %}
 {% endblock %}

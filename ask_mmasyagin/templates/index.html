@@ -1,33 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
-<!-- Sort Questions By Date or By Top -->
+<!-- Sort Questions By Date or By Hot -->
 <div class="row sort-questions">
-    <a class="sort-questions-by-new" href="{% url 'index' %}"><h3>New Questions \m/</h3></a><a class="sort-questions-by-top" href="{% url 'index' %}"><h3>Top Questions \m/</h3></a>
+    {% if user.is_logged_in %}
+    <a class="sort-questions-by-new" href="{% url 'ask' %}"><h3>New Question \m/</h3></a><a class="sort-questions-by-top" href="{% url 'hot' %}"><h3>Hot Questions \m/</h3></a>
+    {% else %}
+    <a class="sort-questions-by-new" href="#"><h3>New Question \m/</h3></a><a class="sort-questions-by-top" href="{% url 'hot' %}"><h3>Hot Questions \m/</h3></a>
+    {% endif %}
 </div>
-{% for question_preview in question_previewes %}
-{% include "modules/question_preview.html" %}
+<!-- Questions -->
+{% for question_preview in question_previews %}
+{% include "modules/index/question_preview.html" %}
 {% endfor %}
-
 <!-- Paginator -->
-<nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-            </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+{% include "modules/index/paginator.html" %}
 {% endblock %}

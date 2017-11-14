@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2b)_9_(cnlopq@ip1rbjayw$dqm8qxv-9ft&=$jcr(an#_sg+q'
+SECRET_KEY = '&z*zjfnbq+-61xixmdps_lu)zg4$!v#8zu^0*^#@9n9pz9t6g3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ask_mmasyagin',
+    'questions',
 ]
 
 MIDDLEWARE = [
@@ -67,8 +67,6 @@ TEMPLATES = [
         },
     },
 ]
-
-# TEMPLATE_DEBUG = True
 
 WSGI_APPLICATION = 'ask_mmasyagin.wsgi.application'
 
@@ -120,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads/'),
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/uploads/'
 
 STATIC_URL = '/'

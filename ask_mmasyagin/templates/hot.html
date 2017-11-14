@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Hot Questions -->
+<div class="row my-input-title"><h3>Hot Questions \m/</h3></div>
+<!-- Questions -->
+{% for question_preview in question_previews %}
+{% include "modules/hot/question_preview.html" %}
+{% endfor %}
+<!-- Paginator -->
+{% include "modules/hot/paginator.html" %}
+{% endblock %}

@@ -1,0 +1,71 @@
+{% load static %}
+<div class="row my-input-title"><h3>Sign Up \m/</h3></div>
+<!-- Input Block -->
+<form class="my-input-block">
+    <!-- Login -->
+    <div class="form-group row">
+        <label for="inputLogin" class="col-sm-1 label">Login:</label>
+        <div class="col-sm-11">
+            <input type="text" class="form-control my-input-textarea {{ login_is_valid }}" id="inputLogin1" placeholder="login">
+            <div class="invalid-feedback">
+                Please, provide valid Login.
+            </div>
+        </div>
+    </div>
+    <!-- Email -->
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-1 label">Email:</label>
+        <div class="col-sm-11">
+            <input type="email" class="form-control my-input-textarea {{ email_is_valid }}" id="inputEmail1" placeholder="sample@sample.ru">
+            <div class="invalid-feedback">
+                Please, provide valid Email.
+            </div>
+        </div>
+    </div>
+    <!-- Nick -->
+    <div class="form-group row">
+        <label for="inputNick" class="col-sm-1 label">Nick:</label>
+        <div class="col-sm-11">
+            <input type="text" class="form-control my-input-textarea {{ nick_is_valid }}" id="inputNick1" placeholder="Sample Sample">
+            <div class="invalid-feedback">
+                Please, provide valid Nick.
+            </div>
+        </div>
+    </div>
+    <!-- Avatar -->
+    <div class="form-group row">
+        <label for="inputPassword1" class="col-sm-1 label">Ava:</label>
+        <div class="col-sm-11">
+            <label class="custom-file">
+                <input type="file" id="file2" class="custom-file-input">
+                <span class="custom-file-control my-input-textarea send-login"></span>
+            </label>
+        </div>
+    </div>
+    <!-- Password -->
+    <div class="form-group row">
+        <label for="inputPassword1" class="col-sm-1 label">Pass:</label>
+        <div class="col-sm-11">
+            <input type="password" class="form-control my-input-textarea {{ password1_is_valid }}" id="inputPassword1" placeholder="**********">
+        </div>
+        <div class="invalid-feedback">
+            This Password is too short!
+        </div>
+    </div>
+    <!-- Repeat Password -->
+    <div class="form-group row">
+        <label for="inputPassword2" class="col-sm-1 label">Pass:</label>
+        <div class="col-sm-11">
+            <input type="password" class="form-control my-input-textarea {{ password2_is_valid }}" id="inputPassword2" placeholder="**********">
+            <div class="invalid-feedback">
+                Passwords are different!
+            </div>
+        </div>
+    </div>
+    <!-- Send Button -->
+    <div class="form-group row">
+        <div class="col-sm-11">
+            <button type="submit" class="btn btn-primary send-button">\m/</button>
+        </div>
+    </div>
+</form>

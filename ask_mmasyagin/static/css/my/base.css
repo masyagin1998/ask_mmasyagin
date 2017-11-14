@@ -193,39 +193,63 @@ body {
 /* Top Tags Colors */
 
 /* Red */
-.top-tags b.red-label {
+.top-tags a.red-label {
     margin-right: 1.5rem;
     color: #F44336;
     font-size: 40px;
 }
 
+.top-tags a.red-label:hover {
+    color: #F44336;
+}
+
 /* Orange */
-.top-tags b.orange-label {
+.top-tags a.orange-label {
     margin-right: 1.5rem;
     color: #FF8000;
     font-size: 30px;
 }
 
+.top-tags a.orange-label:hover {
+    color: #FF8000;
+}
+
+
 /* Yellow */
-.top-tags b.yellow-label {
+.top-tags a.yellow-label {
     margin-right: 1.5rem;
     color: #FFFF00;
     font-size: 15px;
 }
 
+.top-tags a.yellow-label:hover {
+    color: #FFFF00;
+}
+
+
 /* Green */
-.top-tags b.green-label {
+.top-tags a.green-label {
     margin-right: 1.5rem;
     color: #01DF3A;
     font-size: 18px;
 }
 
+.top-tags a.green-label:hover {
+    color: #01DF3A;
+}
+
+
 /* Purple */
-.top-tags b.purple-label {
+.top-tags a.purple-label {
     margin-right: 1.5rem;
     color: #CC2EFA;
     font-size: 10px;
 }
+
+.top-tags a.purple-label:hover {
+    color: #CC2EFA;
+}
+
 
 /* Top Members */
 .top-members {
@@ -233,7 +257,7 @@ body {
 }
 
 /* One Member */
-.top-members a {
+.top-members b {
     display: block;
     margin-bottom:-15px;
     font-size: 18px;
@@ -242,49 +266,30 @@ body {
 /* Top Members Colors */
 
 /* Red */
-.top-members a.red-label {
-    color: #F44336;
-}
-
-.top-members a.red-label:hover {
+.top-members b.red-label {
     color: #F44336;
 }
 
 /* Orange */
-.top-members a.orange-label {
-    color: #FF8000;
-}
-
-.top-members a.orange-label:hover {
+.top-members b.orange-label {
     color: #FF8000;
 }
 
 /* Yellow */
-.top-members a.yellow-label {
-    color: #FFFF00;
-}
-
-.top-members a.yellow-label:hover {
+.top-members b.yellow-label {
     color: #FFFF00;
 }
 
 /* Green */
-.top-members a.green-label {
-    color: #01DF3A;
-}
-
-.top-members a.green-label:hover {
+.top-members b.green-label {
     color: #01DF3A;
 }
 
 /* Purple */
-.top-members a.purple-label {
+.top-members b.purple-label {
     color: #CC2EFA;
 }
 
-.top-members a.purple-label:hover {
-    color: #CC2EFA;
-}
 
 /* Footer */
 /* ****************************** */

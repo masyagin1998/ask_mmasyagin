@@ -1,113 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
-{% include "modules/question.html" %}
-<!-- Answer -->
-<div class="row one-question ">  
-    <div class="col-md-2">
-        
-        <!-- Avatar -->
-        <a href="#"><img class="one-question-avatar" src="../static/img/ava/otep_shamaya.png"></a>
-
-        <!-- Likes -->
-        <a href="#" class="like"></a><b class="likes">9</b>
-        <a href="#" class="dislike"></a><b class="likes">0</b> 
-    </div>
-    <div class="col-md-10">
-        
-        <!-- Answer Text -->
-        <div class="one-question-text">
-            <p>
-                Думаю, что самый быстрый гитарист - это Тьяго Делла Вига из Бразилии. За свою скорость игры (750 звуков в минуту!!!) он даже в книгу рекордов Гинесса попал!
-            </p>
-
-            <!-- Correct Answer -->
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Great answer!
-                </label>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Answer -->
-<div class="row one-question ">  
-    <div class="col-md-2">
-        
-        <!-- Avatar -->
-        <a href="#"><img class="one-question-avatar" src="../static/img/ava/till_lindemann.png"></a>
-
-        <!-- Likes -->
-        <a href="#" class="like"></a><b class="likes">6</b>
-        <a href="#" class="dislike"></a><b class="likes">1</b> 
-    </div>
-    <div class="col-md-10">
-        
-        <!-- Answer Text -->
-        <div class="one-question-text">
-            <p>
-                Думаю, что Зинчук.
-            </p>
-
-            <!-- Correct Answer -->
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Great answer!
-                </label>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Answer -->
-<div class="row one-question ">  
-    <div class="col-md-2">
-        
-        <!-- Avatar -->
-        <a href="#"><img class="one-question-avatar" src="../static/img/ava/serj_tankyan.png"></a>
-
-        <!-- Likes -->
-        <a href="#" class="like"></a><b class="likes">2</b>
-        <a href="#" class="dislike"></a><b class="likes">4</b> 
-    </div>
-    <div class="col-md-10">
-        
-        <!-- Answer Text -->
-        <div class="one-question-text">
-            <p>
-                Это я! ))0)))
-            </p>
-
-            <!-- Correct Answer -->
-            <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Great answer!
-                </label>
-            </div>
-        </div>
-    </div>
-</div>
-
+<!-- Question -->
+<div class="row my-input-title"><h3>Question \m/</h3></div>
+{% include "modules/question/question.html" %}
+<!-- Answers -->
+{% for answer in answers %}
+{% include "modules/question/answer.html" %}
+{% endfor %}
 <!-- Type My Answer -->
-<br>
-<form class="my-input-block">
-    <div class="form-group row">
-        <label for="inputTags" class="col-sm-1 label label-text">Answ:</label>	
-        <div class="col-sm-11">
-            <textarea class="form-control my-input-textarea" rows="8" placeholder="Enter your answer here"></textarea>
-        </div>
-    </div>
+{% include "modules/question/myanswer.html" %}
+{% endblock %}
 
-    <!-- Submit Button -->
-    <div class="form-group row">
-        <div class="col-sm-11">
-            <button type="submit" class="btn btn-primary send-button">\m/</button>
-        </div>
-    </div>
-</form>
-{% endblock %}            

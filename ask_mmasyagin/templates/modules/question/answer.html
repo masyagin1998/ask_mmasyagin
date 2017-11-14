@@ -1,0 +1,26 @@
+{% load static %}
+<div class="row one-question ">  
+    <div class="col-md-2">        
+        <!-- Avatar -->
+        <a href="#"><img class="one-question-avatar" src="{% get_media_prefix %}{{ answer.avatar }}"></a>
+        <!-- Likes -->
+        <a href="#" class="like"></a><b class="likes">{{ answer.number_of_likes }}</b>
+        <a href="#" class="dislike"></a><b class="likes">{{ answer.number_of_dislikes }}</b> 
+    </div>
+    <div class="col-md-10">
+        <!-- Answer Text -->
+        <div class="one-question-text">
+            <p>
+                {{ answer.text }}
+            </p>
+            
+            <!-- Correct Answer -->
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Great answer!
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

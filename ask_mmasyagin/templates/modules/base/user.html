@@ -1,0 +1,17 @@
+{% load static %}
+{% if user.is_logged_in %}
+<!-- For user -->
+<img class="avatar" src="{% get_media_prefix %}{{ user.avatar }}">
+<div class="user">
+    <!-- User Name -->
+    {{ user.nick }}
+    <br>
+    <!-- Links to Settings and Logout -->
+    <a class="user-action" href="{% url 'settings' %}">Settings</a><a class="user-action" href="{% url 'logout' %}">Logout</a>
+</div>
+{% else %}
+<div class="logged-out">
+    <!-- Links to Log In and Sign Up -->
+    <a class="user-action" href="{% url 'login' %}">LogIn</a><a class="user-action" href="{% url 'signup' %}">SignUp</a>
+</div> 
+{% endif %}
