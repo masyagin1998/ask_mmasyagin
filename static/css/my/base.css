@@ -1,0 +1,315 @@
+/* ****************************** */
+/* ************ Base ************ */
+/* ****************************** */
+
+/* Body */
+/* ****************************** */
+body {
+    padding-top: 5rem;
+    background-color: #232323;
+}
+
+/* Navigation Bar */
+/* ****************************** */
+
+/* Navigation Bar colors */
+.navigation-bar {
+    border: 1px solid #0D0D0D;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+}
+
+/* Logo */
+.my-brand-name {
+    margin-bottom: 5px;
+    margin-left: 265px;
+    margin-right: 30px;
+    width: 203px;
+    height: 48px;
+}
+
+.my-brand-name:hover {
+    border: 2px solid #D10017;
+    border-radius: 10px;
+}
+
+/* Search Button */
+.search-button {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #3B3B3B;
+}
+
+.search-button:hover {
+    border-color: #D10017;
+    background-color: #D10017;
+    color: #3B3B3B;
+}
+
+/* Avatar */
+.avatar {
+    margin-right: 55px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* User actions */
+.user {
+    margin-top: 10px;
+    margin-left: -35px;
+    margin-right: 385px;
+    color: #FFFFFF;   
+}
+
+.user-action {
+    margin-right: 8px;
+    color: #FFFFFF;
+}
+.user-action:hover {
+    color: #D10017;
+    text-decoration: none;
+}
+
+.logged-out {
+    margin-right: 420px;
+}
+
+
+/* Container */
+/* ****************************** */
+
+/* Container */
+.container{
+    margin-top: 20px;
+}
+
+/* my Input Block */
+/* ****************************** */
+.my-input-block {
+    margin-right: 55px;
+}
+
+/* my Input Title */
+/* ****************************** */
+.my-input-title {
+    color: #D10017;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+/* Label */
+/* ****************************** */
+.label {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: auto;
+}
+
+/* Text */
+.label-text {
+    color: #FFFFFF;
+    margin-bottom: auto;
+}
+
+/* Tags */
+.label-tags {
+    color: #FFFFFF;
+    margin-top: auto;
+}
+
+/* My Input Textarea */
+.my-input-textarea {
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #3B3B3B;
+    margin-right: 15px;
+}
+
+.my-input-textarea:hover {
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #3B3B3B;
+    margin-right: 15px;
+}
+
+.my-input-textarea:focus {
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #3B3B3B;
+    margin-right: 15px;
+}
+
+/* My Input Validation */
+.my-input-invalid {
+    
+}
+
+/* Send-Button */
+/* ****************************** */
+.send-button {
+    margin-left: 66px;
+    border-color: #3B3B3B;
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+}
+
+
+.send-button:hover {
+    border-color: #D10017;
+    background-color: #D10017;
+    color: #FFFFFF;
+}
+
+
+/* Cloud of Tags */
+/* ****************************** */
+
+/* Tags Column */
+.tags-column {
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    background-color: #3B3B3B;
+}
+
+/* Type of Tags */
+.type-of-tags {
+    margin-left: auto;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* Top Tags */
+.top-tags {
+    margin-bottom: 20px;
+}
+
+/* Top Tags Colors */
+
+/* Red */
+.top-tags a.red-label {
+    margin-right: 1.5rem;
+    color: #F44336;
+    font-size: 40px;
+}
+
+.top-tags a.red-label:hover {
+    color: #F44336;
+}
+
+/* Orange */
+.top-tags a.orange-label {
+    margin-right: 1.5rem;
+    color: #FF8000;
+    font-size: 30px;
+}
+
+.top-tags a.orange-label:hover {
+    color: #FF8000;
+}
+
+
+/* Yellow */
+.top-tags a.yellow-label {
+    margin-right: 1.5rem;
+    color: #FFFF00;
+    font-size: 15px;
+}
+
+.top-tags a.yellow-label:hover {
+    color: #FFFF00;
+}
+
+
+/* Green */
+.top-tags a.green-label {
+    margin-right: 1.5rem;
+    color: #01DF3A;
+    font-size: 18px;
+}
+
+.top-tags a.green-label:hover {
+    color: #01DF3A;
+}
+
+
+/* Purple */
+.top-tags a.purple-label {
+    margin-right: 1.5rem;
+    color: #CC2EFA;
+    font-size: 10px;
+}
+
+.top-tags a.purple-label:hover {
+    color: #CC2EFA;
+}
+
+
+/* Top Members */
+.top-members {
+    margin-top: 10px;
+}
+
+/* One Member */
+.top-members b {
+    display: block;
+    margin-bottom:-15px;
+    font-size: 18px;
+}
+
+/* Top Members Colors */
+
+/* Red */
+.top-members b.red-label {
+    color: #F44336;
+}
+
+/* Orange */
+.top-members b.orange-label {
+    color: #FF8000;
+}
+
+/* Yellow */
+.top-members b.yellow-label {
+    color: #FFFF00;
+}
+
+/* Green */
+.top-members b.green-label {
+    color: #01DF3A;
+}
+
+/* Purple */
+.top-members b.purple-label {
+    color: #CC2EFA;
+}
+
+
+/* Footer */
+/* ****************************** */
+.footer {
+    border: 1px solid #0D0D0D;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+/* Author */
+.designed-by {
+    display: inline-block;
+    padding-right: 611px;
+}
+
+/* Tech Support */
+.tech-support {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-right: 60px;
+}

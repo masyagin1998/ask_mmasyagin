@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="/img/icon/favicon.ico" type="image/x-icon">
+        <!-- Title -->
+        <title>{{ title }}</title> 
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'css/bootstrap/bootstrap.css' %}" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/my/base.css' %}" rel="stylesheet">
+        <link href="{% static 'css/my/index.css' %}" rel="stylesheet">
+        <link href="{% static 'css/my/question.css' %}" rel="stylesheet">
+        <link href="{% static 'css/my/settings.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        {% include "modules/base/header.html" %}
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 ">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <!-- Tags Column -->
+                <div class="col-md-3 col-sm-6 tags-column"><br>
+                    <!-- Top Tags -->
+                    {% include "modules/base/top_tags.html" %}
+                    <!-- Top 10 Users -->
+                    {% include "modules/base/top_users.html" %}
+                </div>
+                <br>
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include "modules/base/footer.html" %}
+        <!-- Scripts -->
+        <script type="text/javascript" src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    </body>
+</html>

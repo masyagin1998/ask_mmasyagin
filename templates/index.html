@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Sort Questions By Date or By Hot -->
+<div class="row sort-questions">
+    {% if user.is_logged_in %}
+    <a class="sort-questions-by-new" href="{% url 'ask' %}"><h3>New Question \m/</h3></a><a class="sort-questions-by-top" href="{% url 'hot' %}"><h3>Hot Questions \m/</h3></a>
+    {% else %}
+    <a class="sort-questions-by-new" href="#"><h3>New Question \m/</h3></a><a class="sort-questions-by-top" href="{% url 'hot' %}"><h3>Hot Questions \m/</h3></a>
+    {% endif %}
+</div>
+<!-- Questions -->
+{% for question_preview in question_previews %}
+{% include "modules/index/question_preview.html" %}
+{% endfor %}
+<!-- Paginator -->
+{% include "modules/index/paginator.html" %}
+{% endblock %}

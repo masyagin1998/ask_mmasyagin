@@ -1,0 +1,14 @@
+/* ****************************** */
+/* ********** Settings ********** */
+/* ****************************** */
+
+/* Avatar */
+/* ****************************** */
+.settings-avatar {
+    margin-left: 67px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}

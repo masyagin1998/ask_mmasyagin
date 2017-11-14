@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Question -->
+<div class="row my-input-title"><h3>Question \m/</h3></div>
+{% include "modules/question/question.html" %}
+<!-- Answers -->
+{% for answer in answers %}
+{% include "modules/question/answer.html" %}
+{% endfor %}
+<!-- Type My Answer -->
+{% include "modules/question/myanswer.html" %}
+{% endblock %}
+

@@ -1,0 +1,182 @@
+/* ****************************** */
+/* ************ Index *********** */
+/* ****************************** */
+
+/* New Questions and Top Questions */
+/* ****************************** */
+
+/* Sort Questions */
+/* ****************************** */
+.sort-questions {
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+/* New Questions */
+.sort-questions-by-new {
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.sort-questions-by-new:hover {
+    color: #D10017;
+    text-decoration: none;
+}
+
+/* Top Questions */
+.sort-questions-by-top {
+    margin-left: 190px;
+    color: #FFFFFF;
+}
+
+.sort-questions-by-top:hover {
+    color: #D10017;
+    text-decoration: none;
+}
+
+/* One Question */
+/* ****************************** */
+
+/* One Question */
+.one-question {
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #3B3B3B;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+
+/* Avatar */
+.one-question img.one-question-avatar {
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    width: 94px;
+    height: 94px;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+/* Question Title */
+.one-question-title {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.one-question-title a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.one-question-title a:hover {
+    color: #F44336;
+}
+
+/* Question Text */
+.one-question-text {
+    color: #FFFFFF;
+}
+
+/* Read More */
+.one-question-read-more {
+    color: #FFFFFF;
+}
+
+.one-question-read-more:hover {
+    color: #F44336;
+    text-decoration: none;
+}
+
+/* Number of answers */
+.one-question-number-of-answers {
+    color: #F44336;
+}
+
+.one-question-number-of-answers:hover {
+    color: #F44336;
+}
+
+/* Tags */
+.one-question-selected-tag {
+    color: #F44336;
+    margin-top: 10px;
+}
+
+.one-question-selected-tag:hover {
+    color: #F44336;
+}
+
+/* Likes */
+/* ****************************** */
+.likes {
+    color: #F44336;
+    margin-left: 3px;
+}
+
+.likes:hover {
+    color: #F44336;
+}
+
+/* Like */
+.like {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-top: 15px;
+    background-image: url(../../img/likes/like/white_like.png);
+    background-size: 26px 26px;
+}
+
+.like:hover {
+    background-image: url(../../img/likes/like/red_like.png);
+    background-size: 26px 26px;
+}
+
+.like:focus {
+    background-image: url(../../img/likes/like/red_like.png);
+    background-size: 26px 26px;
+}
+
+/* Dislike */
+.dislike {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-top: 15px;
+    background-image: url(../../img/likes/dislike/white_dislike.png);
+    background-size: 26px 26px;
+}
+
+.dislike:hover {
+    background-image: url(../../img/likes/dislike/red_dislike.png);
+    background-size: 26px 26px;
+}
+
+.dislike:focus {
+    background-image: url(../../img/likes/dislike/red_dislike.png);
+    background-size: 26px 26px;
+}
+
+/* Paginator */
+/* ****************************** */
+
+/* Paginator */
+.pagination {
+    margin-left:300px;
+    margin-top:20px;
+}
+
+/* Page Link */
+.page-link {
+    color: #FFFFFF;
+    background-color: #3B3B3B;
+    border-color: #3B3B3B;
+}
+
+.page-link:hover {
+    color: #FFFFFF;
+    background-color: #D10017;
+    border-color: #D10017;
+}

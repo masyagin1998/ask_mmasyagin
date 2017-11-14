@@ -1,0 +1,32 @@
+{% load static %}
+<!-- Question Preview -->
+<div class="row one-question">  
+    <div class="col-md-2">
+        <!-- Avatar -->
+        <img class="one-question-avatar" src="{% get_media_prefix %}{{ question_preview.avatar }}">
+        <!-- Likes -->
+        <a href="#" class="like"></a><b class="likes">{{ question_preview.number_of_likes }}</b>
+        <a href="#" class="dislike"></a><b class="likes">{{ question_preview.number_of_dislikes }}</b> 
+    </div>
+    <div class="col-md-10">
+        <!-- Question Title -->
+        <div class="one-question-title">  <a href="{% url 'question' question_preview.id %}">{{ question_preview.title }}</a></div>
+        <!-- Question Text -->
+        <div class="one-question-text">
+            <p>
+                {{ question_preview.text }}...
+                <br>
+                <!-- Full Question Text -->
+                <a class="one-question-read-more" href="{% url 'question' question_preview.id %}">Read more...</a>
+            </p>
+            <!-- Answers -->
+            <div>
+                Answers: <a href="{% url 'question' question_preview.id %}" class="one-question-number-of-answers">{{ question_preview.number_of_answers }}</a>
+            </div>
+            <!-- Tags -->
+            <div>
+                Tags: <a href="{% url 'tag' question_preview.tag1 %}" class="one-question-selected-tag">{{ question_preview.tag1 }}</a> <a href="{% url 'tag' question_preview.tag2 %}" class="one-question-selected-tag">{{ question_preview.tag2 }}</a> <a href="{% url 'tag' question_preview.tag3 %}" class="one-question-selected-tag">{{ question_preview.tag3 }}</a>
+            </div>
+        </div>
+    </div>
+</div>

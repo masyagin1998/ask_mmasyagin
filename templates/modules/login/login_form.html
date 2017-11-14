@@ -1,0 +1,31 @@
+{% load static %}
+<div class="row my-input-title"><h3>Log In \m/</h3></div>
+<!-- Input Block -->
+<form class="my-input-block">
+    <!-- Login -->
+    <div class="form-group row">
+        <label for="inputLogin" class="col-sm-1 label">Login:</label>
+        <div class="col-sm-11">
+            <input type="text" class="form-control my-input-textarea {{ login_is_valid }}" id="inputLogin1" placeholder="login">
+            <div class="invalid-feedback">
+                Please, provide valid Login.
+            </div>
+        </div>
+    </div>
+    <!-- Password -->
+    <div class="form-group row">
+        <label for="inputPassword1" class="col-sm-1 label">Pass:</label>
+        <div class="col-sm-11">
+            <input type="password" class="form-control my-input-textarea {{ password_is_valid }}" id="inputPassword1" placeholder="**********">
+            <div class="invalid-feedback">
+                Please, enter correct Password.
+            </div>
+        </div>
+    </div>
+    <!-- Send Button -->
+    <div class="form-group row">
+        <div class="col-sm-11">
+            <button type="submit" class="btn btn-primary send-button">\m/</button>
+        </div>
+    </div>
+</form>

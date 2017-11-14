@@ -1,0 +1,18 @@
+{% if user.is_logged_in %}
+{% load static %}
+<br>
+<form class="my-input-block">
+    <div class="form-group row">
+        <label for="inputTags" class="col-sm-1 label label-text">Answ:</label>	
+        <div class="col-sm-11">
+            <textarea class="form-control my-input-textarea" rows="8" placeholder="Enter your answer here"></textarea>
+        </div>
+    </div>
+    <!-- Send Button -->
+    <div class="form-group row">
+        <div class="col-sm-11">
+            <button type="submit" class="btn btn-primary send-button">\m/</button>
+        </div>
+    </div>
+</form>
+{% endif %}

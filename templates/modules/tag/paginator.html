@@ -1,0 +1,24 @@
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        {% if pagination_list.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page=1">&laquo;</a></li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ pagination_list.number|add:"-1" }}" aria-label="Previous">
+                    <span aria-hidden="true">&lsaquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+        {% endif %}
+        <li class="page-item"><a class="page-link"
+                                 href="?page={{ pagination_list.number }}">{{ pagination_list.number }}</a></li>
+        {% if pagination_list.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ pagination_list.number|add:"1" }}" aria-label="Next">
+                    <span aria-hidden="true">&rsaquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="?page={{ pagination_list.paginator.num_pages }}">&raquo;</a></li>
+        {% endif %}
+    </ul>
+</nav>
